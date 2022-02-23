@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: auto;
+}
+
+
+#search{
+    height:400px;
+    background-image: url('images/food-wallpaper.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 400px;
+    margin-top: -20%;
+}
+
+#logo{
+    height:150px;
+    width:150px;
+    background-color: rgba(255, 255, 255,1);
+    border-radius: 50%;
+    margin-left:45%;
+    margin-top:1%;
+    position: absolute;
+    font-size:80px;
+    color:#e09c83;
+    animation:revolve 10s infinite;
+}
+
+@keyframes revolve {
+    0% {transform: rotate(30deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
+}
+
+/*
+#logo:hover{
+    background-color: rgba(255, 255, 255,.5);
+    color:#d85323;
+    transform: rotate(270deg);
+}
+*/
+
+#logo > span{
+    margin-left: 30%;
+    margin-top:15%;
+    position: absolute;
+}
+
+#heading{
+    margin-left:24%;
+    margin-top:14%;
+    position: absolute;
+    color:white;
+    font-size:45px;
+}
+
+.dropdown{
+    height:60px;
+    width:60%;
+    margin-left:27%;
+    margin-top:20%;
+    position: absolute;
+    top: 320px;
+}
+
+/* QuickSearch Start */
+#QuickSearch{
+    width:80%;
+    margin-left: 10%;
+    margin-top:30%;
+}
+#QuickHeading{
+    color:orange;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    display:block;
+    margin-left: 2%;
+}
+
+#QuickHeading:hover{
+    font-size:35px; 
+}
+
+#QuickSubHeading{
+    line-height: 2;
+    color:gray;
+    font-size:20px;
+    margin-left: 2%;
+}
+
+.tileContainer{
+    height:200px;
+    width:30%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    box-shadow: 10px 20px 10px gray;
+    /* animation: dance 10s infinite */
+}
+
+
+
+
+
+.tileComponent1{
+    width:58%;
+    float: left;
+    height:200px;
+}
+.tileComponent1 > img{
+    height:200px;
+    width:100%;
+}
+.tileComponent2{
+    width:32%;
+    float: left;
+    height:100px;
+    margin-left: 7%;
+    margin-top: 15%;
+}
+.componentHeading{
+    font-size: 25px;
+    color:orange;
+}
+
+.componentHeading > a{
+    color:orange;
+}
+.componentSubHeading{
+    color:gray;
+}
+/* footer Start */
+footer{
+    display:inline-block;
+    width:100%;
+    margin-top:2%;
+    height:150px;
+    background-color:#e09c83
+}
+
+footer h3{
+    text-align: center;
+}
+
+.foot1{
+    width:35%;
+    height:70px;
+    float: left;
+    border-right:2px solid white
+}
+
+@media screen and (max-width: 1035px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+    #heading{
+        position: absolute;
+        top: 120px;
+        right: -20px;
+        width: 90%;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 60px;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+    #heading{
+        position: absolute;
+        top: 120px;
+        right: -20px;
+        width: 90%;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 60px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+    #heading{
+        position: absolute;
+        top: 120px;
+        left: -160px;
+        width: 130%;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 60px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+    #heading{
+        position: absolute;
+        top: 160px;
+        left: -110px;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 100px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 671px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+    #heading{
+        position: absolute;
+        top: 160px;
+        left: -110px;
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 120px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+
+      #logo{
+        height:150px;
+        width:150px;
+        background-color: rgba(255, 255, 255,1);
+        border-radius: 50%;
+        margin-left:40%;
+        margin-top:1%;
+        position: absolute;
+        font-size:80px;
+        color:#e09c83;
+        animation:revolve 10s infinite;
+    }
+
+    #heading{
+        position: absolute;
+        top: 190px;
+        left: -110px;
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 140px;
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 557px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+
+      #logo{
+        height:150px;
+        width:150px;
+        background-color: rgba(255, 255, 255,1);
+        border-radius: 50%;
+        margin-left:40%;
+        margin-top:1%;
+        position: absolute;
+        font-size:80px;
+        color:#e09c83;
+        animation:revolve 10s infinite;
+    }
+
+    #heading{
+        position: absolute;
+        top: 190px;
+        left: -110px;
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 148px;
+        width: 120%;
+    }
+
+   
+}
+
+@media screen and (max-width: 539px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+
+      #logo{
+        height:150px;
+        width:150px;
+        background-color: rgba(255, 255, 255,1);
+        border-radius: 50%;
+        margin-left:40%;
+        margin-top:1%;
+        position: absolute;
+        font-size:80px;
+        color:#e09c83;
+        animation:revolve 10s infinite;
+    }
+
+    #heading{
+        position: absolute;
+        top: 190px;
+        left: -110px;
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 70px;
+        width: 90%;
+    }
+
+   
+}
+
+@media screen and (max-width: 539px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+
+      #logo{
+        height:150px;
+        width:150px;
+        background-color: rgba(255, 255, 255,1);
+        border-radius: 50%;
+        margin-left:40%;
+        margin-top:1%;
+        position: absolute;
+        font-size:80px;
+        color:#e09c83;
+        animation:revolve 10s infinite;
+    }
+
+    #heading{
+        position: absolute;
+        top: 190px;
+        left: -90px;
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 70px;
+        width: 90%;
+    }
+
+   
+}
+
+@media screen and (max-width: 414px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+
+      #logo{
+        height:150px;
+        width:150px;
+        background-color: rgba(255, 255, 255,1);
+        border-radius: 50%;
+        margin-left:40%;
+        margin-top:1%;
+        position: absolute;
+        font-size:80px;
+        color:#e09c83;
+        animation:revolve 10s infinite;
+    }
+
+    #heading{
+        position: absolute;
+        top: 190px;
+        left: -90px;
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .dropdown{
+        position: relative;
+        right: 70px;
+        width: 90%;
+    }
+
+   
+}
+
+@media screen and (max-width:1169px) {
+    .tileContainer{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1086px) {
+    .tileContainer{
+        width: 40%;
+    }
+
+    #QuickSearch{
+        margin-top: 35%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .tileContainer{
+        width: 42%;
+    }
+
+    #QuickSearch{
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width:908px) {
+    .tileContainer{
+        width: 47%;
+    }
+
+    #QuickSearch{
+        margin-top: 45%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:801px) {
+    .tileContainer{
+        width: 47%;
+    }
+
+    #heading{
+        width: 95%;
+    }
+
+    #QuickSearch{
+        margin-top: 52%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:747px) {
+    .tileContainer{
+        width: 50%;
+    }
+
+    #heading{
+        width: 105%;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:608px) {
+    .tileContainer{
+        width: 50%;
+    }
+
+    #mainContainer{
+        width: 140%;
+    }
+
+    #heading{
+        width: 105%;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:747px) {
+    .tileContainer{
+        width: 50%;
+    }
+
+    #heading{
+        width: 105%;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:724px) {
+    .tileContainer{
+        width: 50%;
+    }
+
+    #mainContainer{
+        width: 160%;
+    }
+
+    #heading{
+        width: 105%;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    #QuickSearch{
+        margin-top: 90%;
+    }
+    .tileContainer{
+        width: 50%;
+    }
+
+    #mainContainer{
+        width: 160%;
+    }
+
+    #heading{
+        width: 105%;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    #QuickSearch{
+        margin-top: 70% !important;
+    }
+    .tileContainer{
+        width: 50%;
+    }
+
+    #mainContainer{
+        width: 160%;
+    }
+
+    #heading{
+        width: 105%;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    #QuickSearch{
+        margin-top: 80% !important;
+    }
+    .tileContainer{
+        width: 50%;
+    }
+
+    #mainContainer{
+        width: 160%;
+    }
+
+    #heading{
+        width: 105%;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #QuickSearch{
+        margin-top: 80% !important;
+    }
+    .tileContainer{
+        width: 60%;
+    }
+
+    #mainContainer{
+        width: 160%;
+    }
+
+    #heading{
+        width: 105%;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #QuickSearch{
+        margin-top: 100% !important;
+    }
+    .tileContainer{
+        width: 60%;
+    }
+
+    #mainContainer{
+        width: 160%;
+    }
+
+    #heading{
+        width: 105%;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #QuickSearch{
+        margin-top: 105% !important;
+    }
+    .tileContainer{
+        width: 60%;
+    }
+
+    #mainContainer{
+        width: 160%;
+    }
+
+    #heading{
+        width: 115%;
+        font-size: 20px;
+        position: relative;
+        right: 90px;
+    }
+
+    #QuickSearch{
+        margin-top: 57%;
+    }
+
+    .dropdown{
+        width: 90%;
+    }
+}
+
