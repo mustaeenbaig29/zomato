@@ -3,8 +3,34 @@
     padding: 0;
 }
 
+.header{
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+}
+
+
+.header a{
+    color: var(--secondary-color) !important;
+}
+
+:root{
+     --primary-color:#edf2fc;
+    --secondary-color:#212121; 
+ }
+
+ .dark{
+     --primary-color:#000106;
+    --secondary-color:#fff;
+ }
+
 body{
+    background-color: var(--primary-color) !important;
     margin: auto;
+}
+
+.navbar .navbar-toggler {
+    /* color: #9933CC!important; */
+    background-color: #ff4444 !important;
 }
 
 
@@ -20,7 +46,7 @@ body{
 #logo{
     height:150px;
     width:150px;
-    background-color: rgba(255, 255, 255,1);
+    background-color: var(--primary-color);
     border-radius: 50%;
     margin-left:45%;
     margin-top:1%;
@@ -75,6 +101,8 @@ body{
     margin-left: 10%;
     margin-top:30%;
 }
+
+
 #QuickHeading{
     color:orange;
     font-size:30px;
@@ -105,7 +133,10 @@ body{
     /* animation: dance 10s infinite */
 }
 
-
+#icon{
+    width: 40px;
+    cursor: pointer;
+}
 
 
 
@@ -142,18 +173,20 @@ footer{
     width:100%;
     margin-top:2%;
     height:150px;
-    background-color:#e09c83
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
 }
 
 footer h3{
     text-align: center;
+    color: var(--secondary-color);
 }
 
 .foot1{
     width:35%;
     height:70px;
     float: left;
-    border-right:2px solid white
+    border-right:2px solid var(--primary-color)
 }
 
 @media screen and (max-width: 1035px) {
