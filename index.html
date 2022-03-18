@@ -22,6 +22,14 @@
               <a class="nav-link" href="#">About Us</a>
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
               <img src="images/moon.png" id="icon">
+
+              <button onclick="geolocation()">
+                Get Location
+              </button>
+              <p id="out"></p>
+              <p id="cityout"></p>
+              <p id="weatherout"></p>
+
             </div>
           </div>
         </div>
@@ -172,6 +180,32 @@
             }else{
                 icon.src = "images/moon.png"
             }
+        }
+
+        var x = document.getElementById('out')
+        var y = document.getElementById('weatherout')
+        function geolocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition)
+            }else{
+                x.innerText="geo not supported"
+            }
+        }
+
+        function showPosition(data){
+            console.log(data)
+            const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=28.989184&lon=77.0342729&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+            // api calling
+            fetch(url, {method: 'GET'})
+            // return promise
+            .then((res) => res.json())
+            // return promise
+            .then((data) => {
+                let cityname = data.city.name
+                let weather = `${data.list[0].temp.day} degree`
+                let output = `${cityname} ${weather}`
+                y.innerText = output;
+            })
         }
     </script>
 </body>
